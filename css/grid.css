@@ -17,3 +17,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
+.grid-justify-center {
+    justify-content: center;
+}
+
+.grid-align-center {
+    align-items: center;
+}
