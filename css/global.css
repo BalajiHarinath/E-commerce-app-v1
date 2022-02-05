@@ -1,3 +1,19 @@
+:root{
+    --primary-color : #973a99;
+    --secondary-color : #faf8f8; 
+    --tertiary-color : #b1abab;
+
+    --text-color1 : rgb(59, 57, 57);
+    --box-shadow : 1px 1px 10px 1px #3b3f4266;
+
+    --fav-btn : #ff6347;
+
+    --white : #FFFF;
+    --black : #0000;
+}
+
+
+
 /* Typography */
 
 h1,
@@ -126,6 +142,15 @@ a {
 }
 
 /*Lists*/
-list-style-none {
+.list-style-none {
     list-style: none;
 }
+
+/*Buttons*/
+.btn-transparent {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+
