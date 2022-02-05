@@ -34,7 +34,7 @@
             <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
                 <li class="flex flex-column flex-justify-center flex-align-center">
                     <a class="flex flex-column" href="">
-                        <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
+                        <i class="fa fa-user text-2xl nav-links" aria-hidden="true"></i>
                     </a>
                     <span class="text-xs">Profile</span>
                 </li>
@@ -42,7 +42,7 @@
                 <li class="flex flex-column flex-justify-center flex-align-center">
                     <a class="flex flex-column" href="./Pages/Wishlist/wishlist.html">
                         <span class="badge-container">
-                            <i class="fas fa-heart fa text-2xl nav-links  nav-wishlist"></i>
+                            <i class="fas fa-heart fa text-2xl nav-links"></i>
                             <span class="status-badge status-badge-number">2</span>
                         </span>
                     </a>
@@ -52,7 +52,7 @@
                 <li class="flex flex-column flex-justify-center flex-align-center">
                     <a class="flex flex-column" href="">
                         <span class="badge-container">
-                            <i class="fa fa-shopping-cart text-2xl nav-links  nav-cart"></i>
+                            <i class="fa fa-shopping-cart text-2xl nav-links"></i>
                             <span class="status-badge status-badge-number">1</span>
                         </span>
                     </a>    
@@ -65,21 +65,11 @@
         <main class="flex flex-justify-center flex-align-center mt-4 mb-4">
             <form class="sign-in-box">
                 <div class="flex flex-column flex-gap-1-5 mt-2 mr-4 mb-2 ml-4">
-                    <h3>Signup</h3>
+                    <h3>Login</h3>
 
                     <div class="flex flex-column">
                         <label class="text-sm font-semibold" for="email-id">Email address</label>
                         <input class="signup-input-box" name="email-id" id="email-id" type="email" placeholder="example@easymart.com"/>
-                    </div>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="first-name">First Name</label>
-                        <input class="signup-input-box" ype="text" name="first-name" id="f-name"/>
-                    </div>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="last-name">Last Name</label>
-                        <input class="signup-input-box" type="text" name="last-name" id="l-name"/>
                     </div>
 
                     <div class="flex flex-column">
@@ -92,25 +82,16 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="confirm-pwd">Confirm Password</label>
-                        <div class="flex">
-                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="confirm-pwd" id="confirm-pwd" placeholder="************"/>
-                            <button class="signup-hide-show-btn btn-transparent">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div>
+                    <div class="flex flex-justify-space-between">
                         <label class="text-sm font-semibold" for="terms&conditions">
                         <input class="signup-input-box" type="checkbox" name="terms&conditions" id="t&c">
-                        I accept all Terms & Conditions
+                        Remember me
                         </label>
+                        <span class="forgot-pwd text-sm">Forgot your Password?</span>
                     </div>
-                    <button class="btn-solid btn-medium">Create New Account</button>
+                    <button class="btn-solid btn-medium">Login</button>
 
-                    <a class="signup-login-switch-link text-sm font-semibold" href="login.html">Already have an account <span>></span></a>
+                    <a class="signup-login-switch-link text-sm font-semibold" href="index.html">Create New Account <span>></span></a>
                 </div>
             </form>
         </main>

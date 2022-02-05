@@ -55,9 +55,13 @@ justify-content: flex-start;
 }
 
 .flex-gap-1 {
-gap: 1rem;
+    gap: 1rem;
+}
+
+.flex-gap-1-5 {
+    gap: 1.5rem;
 }
 
 .flex-gap-2 {
-gap: 2rem;
+    gap: 2rem;
 }
