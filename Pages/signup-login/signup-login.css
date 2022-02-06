@@ -12,7 +12,7 @@
     color: var(--text-color1);
 }
 
-.nav-cart {
+.nav-profile {
     color: var(--primary-color);
 }
 
@@ -60,53 +60,54 @@
 
 
 /*Main*/
-.cart-card {
-    width: 30rem;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    border: 1px solid var(--border-color1);
-    transition: all 0.4 ease;
+/*Sign up and login page*/
+.sign-in-box {
+    width: 27rem;
+    background-color: var(--secondary-color-light);
+    box-shadow: var(--box-shadow-1);
 }
 
-.cart-card:hover {
-    transform: scale(1.01);
-}
-
-.cart-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.cart-article-discount {
+.sign-in-box h3{
     color: var(--primary-color);
+    margin: auto;
 }
 
-.cart-article-btn-remove, .cart-article-btn-move {
-    width: 100%;
-}
 
-.cart-price-details {
-    width: 20rem;
-    height: 20rem;
-    position: fixed;
-    border-left: 1px solid var(--border-color1);
-}
-
-.cart-coupon {
-    padding: 0.5rem;
+.signup-input-box {
+    padding: 5px;
+    outline: none;
     border: 1px solid var(--border-color1);
 }
 
-.cart-article-place-order {
-    width: 100%;
-    background-color: var(--yellow);
-    color: var(--primary-color);
+.pwd-box {
+    border-right: none;
 }
 
-.cart-article-place-order:hover {
-    background-color: var(--yellow);
+.signup-hide-show-btn {
+    border: 1px solid var(--border-color1);
+    border-left: none;
+    padding-right: 8px;
+    background-color: var(--white);
+}
+
+.btn-solid {
+    width: 100%;
+    height: 2.5rem;
+}
+
+.signup-login-switch-link {
+    color: var(--primary-color);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.signup-login-switch-link:hover {
+    color: var(--primary-color);
+    transform: translateX(10%);
+}
+
+/*Login page*/
+.forgot-pwd {
     color: var(--primary-color);
 }
 

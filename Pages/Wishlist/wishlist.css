@@ -98,7 +98,6 @@
 
 /*Footer*/
 .footer{
-    grid-column: 1/-1;
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
     z-index: 1;
