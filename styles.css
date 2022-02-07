@@ -72,59 +72,118 @@
 /*Main*/
 
 .main {
-    margin-top: calc(4.375rem + 1rem);
+    margin-top: calc(4.375rem + 0rem);
 }
 
-.cart-card {
-    width: 30rem;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    border: 1px solid var(--border-color1);
-    transition: all 0.4 ease;
+.home-image {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    border-radius: 1rem;
 }
 
-.cart-card:hover {
-    transform: scale(1.01);
+.home-text {
+    top: 10rem;
+    left: 40vw;
+    color: var(--white);
+    grid-column: 2/4;
+    grid-row-start: 1;
 }
 
-.cart-img {
+.home-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.home-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/*Category and brands*/
+.category-header {
+    color: var(--text-color1);
+}
+
+.categories-article {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.categories-article:hover {
+    transform: scale(1.05);
+}
+.categories-overlay-container {
+    width: 12rem;
+    height: 15rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.category-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    border-radius: 1rem;
 }
 
-.cart-article-discount {
-    color: var(--primary-color);
+.categories-text-overlay {
+    position: absolute;
+    width: 12rem;
+    height: 15rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+    border-radius: 1rem;
+    background-color: var(--background-color1);
 }
 
-.cart-article-btn-remove, .cart-article-btn-move {
+/*Deals of the day*/
+.card-img-vt{
     width: 100%;
+    height: 80%;
+    max-width: 20rem;
+    max-height: 20rem;
+    object-fit: cover;
 }
 
-.cart-price-details {
-    width: 20rem;
-    height: 20rem;
-    position: fixed;
-    border-left: 1px solid var(--border-color1);
-}
-
-.cart-coupon {
-    padding: 0.5rem;
+.card-text-only {
+    margin-top: 0;
+    border-radius: 1rem;
+    box-shadow: none;
     border: 1px solid var(--border-color1);
-    color: var(--primary-color);
+    /* transition: all 0.2s ease; */
 }
 
-.cart-article-place-order {
-    width: 100%;
-    background-color: var(--yellow);
-    color: var(--primary-color);
+.card-text-only:hover {
+    border: 1px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
 }
 
-.cart-article-place-order:hover {
-    background-color: var(--yellow);
-    color: var(--primary-color);
+.card-vertical {
+    margin-top: 0;
 }
+
+.dod-company, .dod-product{
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.card-dod-discount-price {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.card-dod-reviews {
+    font-size: small;
+}
+
+
 
 
 /*Footer*/
