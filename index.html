@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleMart | wishlist</title>
+    <title>SimpleMart | Cart</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,9 +17,9 @@
 
 </head>
 <body>
-    <div class="flex flex-column">
+    <div class="page-container flex flex-column">
         <!--Nav bar-->
-        <nav class="navbar flex pdt-1 pdb-1 pdr-4 pdl-3">
+        <nav class="navbar flex pdr-4 pdl-3">
             <div class="flex flex-align-center flex-gap-2">
                 <h4 class="title font-bold m">Easy Mart</h2>
                 <ul class="list-style-none flex flex-gap-1">
@@ -33,7 +33,7 @@
             </div>
             <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
                 <li class="flex flex-column flex-justify-center flex-align-center">
-                    <a class="flex flex-column" href="">
+                    <a class="flex flex-column" href="./Pages/signup-login/signup.html">
                         <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
                     </a>
                     <span class="text-xs">Profile</span>
@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="flex flex-column flex-justify-center flex-align-center">
-                    <a class="flex flex-column" href="">
+                    <a class="flex flex-column" href="index.html">
                         <span class="badge-container">
                             <i class="fa fa-shopping-cart text-2xl nav-links  nav-cart"></i>
                             <span class="status-badge status-badge-number">1</span>
@@ -62,57 +62,125 @@
         </nav>
 
         <!--Main-->
-        <main class="flex flex-justify-center flex-align-center mt-4 mb-4">
-            <form class="sign-in-box">
-                <div class="flex flex-column flex-gap-1-5 mt-2 mr-4 mb-2 ml-4">
-                    <h3>Signup</h3>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="email-id">Email address</label>
-                        <input class="signup-input-box" name="email-id" id="email-id" type="email" placeholder="example@easymart.com"/>
-                    </div>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="first-name">First Name</label>
-                        <input class="signup-input-box" ype="text" name="first-name" id="f-name"/>
-                    </div>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="last-name">Last Name</label>
-                        <input class="signup-input-box" type="text" name="last-name" id="l-name"/>
-                    </div>
-
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="pwd">Password</label>
-                        <div class="flex">
-                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="pwd" id="pwd" placeholder="************"/>
-                            <button class="signup-hide-show-btn btn-transparent">
-                                <i class="fa fa-eye" aria-hidden="true"></i>
-                            </button>
+        <main class="main grid-2-column flex-grow-1">
+            <div class="flex flex-column flex-align-end pd-1">
+                <article class="cart-card m-2">
+                    <img class="cart-img" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                    <div class="flex flex-column flex-gap-0-5 pd-1">
+                        <span class="text-lg">Nike T Shirt</span>
+                        <div>
+                            <span class="font-semibold">Rs.2000</span>
+                            <span class="text-sm text-line-through">Rs.4000</span>
+                        </div>
+                        <span class="cart-article-discount text-sm font-semibold">50% off</span>
+                        <div class="flex flex-gap-0-5">
+                            <span class="text-sm">Quantity : </span>
+                            <button class="btn-transparent"><i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i></button>
+                            <span>2</span>
+                            <button class="btn-transparent"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <button class="cart-article-btn-remove btn-solid btn-small">Remove From Cart</button>
+                            <button class="cart-article-btn-move btn-outline btn-small">Move to Wishlist</button>
                         </div>
                     </div>
+                </article>
 
-                    <div class="flex flex-column">
-                        <label class="text-sm font-semibold" for="confirm-pwd">Confirm Password</label>
-                        <div class="flex">
-                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="confirm-pwd" id="confirm-pwd" placeholder="************"/>
-                            <button class="signup-hide-show-btn btn-transparent">
-                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
-                            </button>
+                <article class="cart-card m-2">
+                    <img class="cart-img" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                    <div class="flex flex-column flex-gap-0-5 pd-1">
+                        <span class="text-lg">Nike T Shirt</span>
+                        <div>
+                            <span class="font-semibold">Rs.2000</span>
+                            <span class="text-sm text-line-through">Rs.4000</span>
+                        </div>
+                        <span class="cart-article-discount text-sm font-semibold">50% off</span>
+                        <div class="flex flex-gap-0-5">
+                            <span class="text-sm">Quantity : </span>
+                            <button class="btn-transparent"><i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i></button>
+                            <span>2</span>
+                            <button class="btn-transparent"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <button class="cart-article-btn-remove btn-solid btn-small">Remove From Cart</button>
+                            <button class="cart-article-btn-move btn-outline btn-small">Move to Wishlist</button>
                         </div>
                     </div>
+                </article>
 
+                <article class="cart-card m-2">
+                    <img class="cart-img" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                    <div class="flex flex-column flex-gap-0-5 pd-1">
+                        <span class="text-lg">Nike T Shirt</span>
+                        <div>
+                            <span class="font-semibold">Rs.2000</span>
+                            <span class="text-sm text-line-through">Rs.4000</span>
+                        </div>
+                        <span class="cart-article-discount text-sm font-semibold">50% off</span>
+                        <div class="flex flex-gap-0-5">
+                            <span class="text-sm">Quantity : </span>
+                            <button class="btn-transparent"><i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i></button>
+                            <span>2</span>
+                            <button class="btn-transparent"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <button class="cart-article-btn-remove btn-solid btn-small">Remove From Cart</button>
+                            <button class="cart-article-btn-move btn-outline btn-small">Move to Wishlist</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart-card m-2">
+                    <img class="cart-img" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                    <div class="flex flex-column flex-gap-0-5 pd-1">
+                        <span class="text-lg">Nike T Shirt</span>
+                        <div>
+                            <span class="font-semibold">Rs.2000</span>
+                            <span class="text-sm text-line-through">Rs.4000</span>
+                        </div>
+                        <span class="cart-article-discount text-sm font-semibold">50% off</span>
+                        <div class="flex flex-gap-0-5">
+                            <span class="text-sm">Quantity : </span>
+                            <button class="btn-transparent"><i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i></button>
+                            <span>2</span>
+                            <button class="btn-transparent"><i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <button class="cart-article-btn-remove btn-solid btn-small">Remove From Cart</button>
+                            <button class="cart-article-btn-move btn-outline btn-small">Move to Wishlist</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+                
+            <div class="flex flex-column pd-1">
+                <div class="cart-price-details m-2 pdl-2">
+                    <div class="pdb-2">
+                        <h5 class="font-semibold pdb-1">COUPONS</h5>
+                        <a class="cart-coupon" href=""><i class="fa fa-tag" aria-hidden="true"></i>Apply Coupon</a>
+                    </div>
                     <div>
-                        <label class="text-sm font-semibold" for="terms&conditions">
-                        <input class="signup-input-box" type="checkbox" name="terms&conditions" id="t&c">
-                        I accept all Terms & Conditions
-                        </label>
+                        <h5 class="font-semibold pdb-1">PRICE DETAILS : (2 items)</h5>
+                        <div class="flex pdb-1">
+                            <p class="flex-grow-1 text-base">Total MRP</p>
+                            <span>Rs.5000</span>
+                        </div>
+                        <div class="flex pdb-1">
+                            <p class="flex-grow-1 text-base">Discount</p>
+                            <span>Rs.2000</span>
+                        </div>
+                        <div class="flex pdb-1">
+                            <p class="flex-grow-1 text-base">Delivery Charge</p>
+                            <span>Rs.200</span>
+                        </div>
+                        <div class="flex pdb-1">
+                            <p class="flex-grow-1 text-base font-semibold">Total Amount</p>
+                            <span class="font-semibold">Rs.3200</span>
+                        </div>
+                        <button class="cart-article-place-order btn-solid btn-small font-semibold">Place Order</button>
                     </div>
-                    <button class="btn-solid btn-medium">Create New Account</button>
-
-                    <a class="signup-login-switch-link text-sm font-semibold" href="login.html">Already have an account <span>></span></a>
                 </div>
-            </form>
+            </div>
         </main>
 
         <!--Footer-->

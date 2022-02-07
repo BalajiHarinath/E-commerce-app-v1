@@ -11,6 +11,7 @@
 
     --fav-btn : #ff6347;
 
+    --yellow : #eed70d;
     --white : #FFFF;
     --black : #0000;
 }
@@ -129,6 +130,10 @@ a {
     font-weight: 800;
 }
 
+.text-line-through {
+    text-decoration: line-through;
+    color: #918d8d;;
+}
 
 /*Positions*/
 

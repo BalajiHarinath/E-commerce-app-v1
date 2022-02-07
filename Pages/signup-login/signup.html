@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleMart | Signup</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Simple UI Library-->
+    <link rel="stylesheet" href="https://simpleui-component-library.netlify.app/Components/simpleui.css">
+
+    <!--Custom UI Library-->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="signup-login.css">
+
+</head>
+<body>
+    <div class="page-container flex flex-column">
+        <!--Nav bar-->
+        <nav class="navbar flex pdr-4 pdl-3">
+            <div class="flex flex-align-center flex-gap-2">
+                <h4 class="title font-bold m">Easy Mart</h2>
+                <ul class="list-style-none flex flex-gap-1">
+                    <li><a class="nav-links font-semibold mr-2 ml-2" href="">Home</a></li>
+                    <li><a class="nav-links font-semibold" href="">Shop Now</a></li>
+                </ul>   
+            </div>
+            <div class="searchbar flex flex-justify-center pd-1 flex-grow-1">
+                <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input class="searchbar-input" type="text" placeholder="Type to search"/>
+            </div>
+            <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="">
+                        <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
+                    </a>
+                    <span class="text-xs">Profile</span>
+                </li>
+
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="../Wishlist/wishlist.html">
+                        <span class="badge-container">
+                            <i class="fas fa-heart fa text-2xl nav-links  nav-wishlist"></i>
+                            <span class="status-badge status-badge-number">2</span>
+                        </span>
+                    </a>
+                    <span class="text-xs">Wishlist</span> 
+                </li>
+
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="../../index.html">
+                        <span class="badge-container">
+                            <i class="fa fa-shopping-cart text-2xl nav-links  nav-cart"></i>
+                            <span class="status-badge status-badge-number">1</span>
+                        </span>
+                    </a>    
+                    <span class="text-xs">Cart</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Main-->
+        <main class="main flex flex-justify-center flex-align-center flex-grow-1 mt-4 mb-4">
+            <form class="sign-in-box">
+                <div class="flex flex-column flex-gap-1-5 mt-2 mr-4 mb-2 ml-4">
+                    <h3>Signup</h3>
+
+                    <div class="flex flex-column">
+                        <label class="text-sm font-semibold" for="email-id">Email address</label>
+                        <input class="signup-input-box" name="email-id" id="email-id" type="email" placeholder="example@easymart.com"/>
+                    </div>
+
+                    <div class="flex flex-column">
+                        <label class="text-sm font-semibold" for="first-name">First Name</label>
+                        <input class="signup-input-box" ype="text" name="first-name" id="f-name"/>
+                    </div>
+
+                    <div class="flex flex-column">
+                        <label class="text-sm font-semibold" for="last-name">Last Name</label>
+                        <input class="signup-input-box" type="text" name="last-name" id="l-name"/>
+                    </div>
+
+                    <div class="flex flex-column">
+                        <label class="text-sm font-semibold" for="pwd">Password</label>
+                        <div class="flex">
+                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="pwd" id="pwd" placeholder="************"/>
+                            <button class="signup-hide-show-btn btn-transparent">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-column">
+                        <label class="text-sm font-semibold" for="confirm-pwd">Confirm Password</label>
+                        <div class="flex">
+                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="confirm-pwd" id="confirm-pwd" placeholder="************"/>
+                            <button class="signup-hide-show-btn btn-transparent">
+                                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-semibold" for="terms&conditions">
+                        <input class="signup-input-box" type="checkbox" name="terms&conditions" id="t&c">
+                        I accept all Terms & Conditions
+                        </label>
+                    </div>
+                    <button class="btn-solid btn-medium">Create New Account</button>
+
+                    <a class="signup-login-switch-link text-sm font-semibold" href="login.html">Already have an account <span>></span></a>
+                </div>
+            </form>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
+            <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
+            <ul class="flex list-style-none footer-social-icons">
+                <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="footer-copy">© 2022 Easy Mart</div>
+        </footer>
+    </div>
+    
+</body>
+</html>

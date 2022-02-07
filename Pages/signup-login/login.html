@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimpleMart | wishlist</title>
+    <title>SimpleMart | Login</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,13 +13,13 @@
 
     <!--Custom UI Library-->
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup-login.css">
 
 </head>
 <body>
-    <div class="flex flex-column">
+    <div class="page-container flex flex-column">
         <!--Nav bar-->
-        <nav class="navbar flex pdt-1 pdb-1 pdr-4 pdl-3">
+        <nav class="navbar flex pdr-4 pdl-3">
             <div class="flex flex-align-center flex-gap-2">
                 <h4 class="title font-bold m">Easy Mart</h2>
                 <ul class="list-style-none flex flex-gap-1">
@@ -40,7 +40,7 @@
                 </li>
 
                 <li class="flex flex-column flex-justify-center flex-align-center">
-                    <a class="flex flex-column" href="./Pages/Wishlist/wishlist.html">
+                    <a class="flex flex-column" href="../Wishlist/wishlist.html">
                         <span class="badge-container">
                             <i class="fas fa-heart fa text-2xl nav-links"></i>
                             <span class="status-badge status-badge-number">2</span>
@@ -50,7 +50,7 @@
                 </li>
 
                 <li class="flex flex-column flex-justify-center flex-align-center">
-                    <a class="flex flex-column" href="">
+                    <a class="flex flex-column" href="../../index.html">
                         <span class="badge-container">
                             <i class="fa fa-shopping-cart text-2xl nav-links"></i>
                             <span class="status-badge status-badge-number">1</span>
@@ -62,7 +62,7 @@
         </nav>
 
         <!--Main-->
-        <main class="flex flex-justify-center flex-align-center mt-4 mb-4">
+        <main class="main flex flex-justify-center flex-align-center flex-grow-1 mt-4 mb-4">
             <form class="sign-in-box">
                 <div class="flex flex-column flex-gap-1-5 mt-2 mr-4 mb-2 ml-4">
                     <h3>Login</h3>
@@ -75,7 +75,7 @@
                     <div class="flex flex-column">
                         <label class="text-sm font-semibold" for="pwd">Password</label>
                         <div class="flex">
-                            <input class="signup-input-box flex-grow-1 pwd-box" type="password" name="pwd" id="pwd" placeholder="************"/>
+                            <input class="signup-input-box pwd-box flex-grow-1 " type="password" name="pwd" id="pwd" placeholder="**********"/>
                             <button class="signup-hide-show-btn btn-transparent">
                                 <i class="fa fa-eye" aria-hidden="true"></i>
                             </button>
@@ -91,7 +91,7 @@
                     </div>
                     <button class="btn-solid btn-medium">Login</button>
 
-                    <a class="signup-login-switch-link text-sm font-semibold" href="index.html">Create New Account <span>></span></a>
+                    <a class="signup-login-switch-link text-sm font-semibold" href="signup.html">Create New Account <span>></span></a>
                 </div>
             </form>
         </main>

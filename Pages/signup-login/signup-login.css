@@ -3,6 +3,9 @@
 }
 
 /*Navbar*/
+body {
+    height: 100vh;
+}
 .navbar {
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
@@ -19,7 +22,7 @@
     color: var(--text-color1);
 }
 
-.nav-cart {
+.nav-profile {
     color: var(--primary-color);
 }
 
@@ -65,64 +68,61 @@
     top: -0.7rem;
 }
 
-.searchbar-smallscreen {
-    display: none;
-}
 
 /*Main*/
+/*Sign up and login page*/
 
 .main {
-    margin-top: calc(4.375rem + 1rem);
+    margin-top: calc(4.375rem + 4rem);
 }
 
-.cart-card {
-    width: 30rem;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 10rem 1fr;
+.sign-in-box {
+    width: 27rem;
+    background-color: var(--secondary-color-light);
+    box-shadow: var(--box-shadow-1);
+}
+
+.sign-in-box h3{
+    color: var(--primary-color);
+    margin: auto;
+}
+
+
+.signup-input-box {
+    padding: 5px;
+    outline: none;
     border: 1px solid var(--border-color1);
-    transition: all 0.4 ease;
 }
 
-.cart-card:hover {
-    transform: scale(1.01);
+.pwd-box {
+    border-right: none;
 }
 
-.cart-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.cart-article-discount {
-    color: var(--primary-color);
-}
-
-.cart-article-btn-remove, .cart-article-btn-move {
-    width: 100%;
-}
-
-.cart-price-details {
-    width: 20rem;
-    height: 20rem;
-    position: fixed;
-    border-left: 1px solid var(--border-color1);
-}
-
-.cart-coupon {
-    padding: 0.5rem;
+.signup-hide-show-btn {
     border: 1px solid var(--border-color1);
-    color: var(--primary-color);
+    border-left: none;
+    padding-right: 0.5rem;
+    background-color: var(--white);
 }
 
-.cart-article-place-order {
+.btn-solid {
     width: 100%;
-    background-color: var(--yellow);
-    color: var(--primary-color);
+    height: 2.5rem;
 }
 
-.cart-article-place-order:hover {
-    background-color: var(--yellow);
+.signup-login-switch-link {
+    color: var(--primary-color);
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.signup-login-switch-link:hover {
+    color: var(--primary-color);
+    transform: translateX(10%);
+}
+
+/*Login page*/
+.forgot-pwd {
     color: var(--primary-color);
 }
 
