@@ -1,7 +1,17 @@
+.page-container {
+    height: 100vh;
+}
+
 /*Navbar*/
+body {
+    height: 100vh;
+}
 .navbar {
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
 
 .title {
@@ -61,6 +71,11 @@
 
 /*Main*/
 /*Sign up and login page*/
+
+.main {
+    margin-top: calc(4.375rem + 4rem);
+}
+
 .sign-in-box {
     width: 27rem;
     background-color: var(--secondary-color-light);
@@ -86,7 +101,7 @@
 .signup-hide-show-btn {
     border: 1px solid var(--border-color1);
     border-left: none;
-    padding-right: 8px;
+    padding-right: 0.5rem;
     background-color: var(--white);
 }
 
@@ -145,3 +160,32 @@
 .footer-copy {
 	color: var(--primary-color);
 }
+
+/*Media-Queries*/
+
+/* @media screen and (max-width : 1140px) {
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    body {
+        height: 100vh;
+    }
+    :root{
+        font-size: 8px;
+    }
+} */

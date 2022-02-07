@@ -1,7 +1,14 @@
+.page-container {
+    height: 100vh;
+}
+
 /*Navbar*/
 .navbar {
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
 
 .title {
@@ -60,6 +67,11 @@
 
 
 /*Main*/
+
+.main {
+    margin-top: calc(4.375rem + 1rem);
+}
+
 .wishlist-card {
     width: 16rem;
     height: 25rem;
@@ -129,3 +141,32 @@
 .footer-copy {
 	color: var(--primary-color);
 }
+
+/*Media-Queries*/
+
+/* @media screen and (max-width : 1140px) {
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    :root{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    body {
+        height: 100vh;
+    }
+    :root{
+        font-size: 8px;
+    }
+} */
