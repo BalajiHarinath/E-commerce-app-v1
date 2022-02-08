@@ -19,10 +19,6 @@
     color: var(--text-color1);
 }
 
-.nav-cart {
-    color: var(--primary-color);
-}
-
 .searchbar-btn{
     background-color: var(--white);
     border: 0.5px solid black;
