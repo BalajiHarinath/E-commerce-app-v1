@@ -90,7 +90,7 @@ body {
 
 
 .signup-input-box {
-    padding: 5px;
+    padding: 8px;
     outline: none;
     border: 1px solid var(--border-color1);
 }
