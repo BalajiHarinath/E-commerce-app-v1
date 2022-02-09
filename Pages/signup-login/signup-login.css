@@ -6,6 +6,7 @@
 body {
     height: 100vh;
 }
+
 .navbar {
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
