@@ -11,6 +11,8 @@
     --box-shadow-1 : 1px 1px 10px 1px #f0ebea;
 
     --fav-btn : #ff6347;
+    --btn-dark-hover-bg : #750977;
+    --btn-light-hover-bg : #ffffff;
 
     --yellow : #eed70d;
     --white : #FFFF;
@@ -162,4 +164,8 @@ a {
     cursor: pointer;
 }
 
+/*line*/
+.line-spacing {
+    line-height: 2rem;
+}
 

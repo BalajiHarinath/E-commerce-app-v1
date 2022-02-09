@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleMart | Products</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Simple UI Library-->
+    <link rel="stylesheet" href="https://simpleui-component-library.netlify.app/Components/simpleui.css">
+
+    <!--Custom UI Library-->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="page-container flex flex-column">
+        <!--Nav bar-->
+        <nav class="navbar flex pdr-4 pdl-3">
+            <div class="flex flex-align-center flex-gap-2">
+                <h4 class="title font-bold m">Easy Mart</h2>
+                <ul class="list-style-none flex flex-gap-1">
+                    <li><a class="nav-links font-semibold mr-2 ml-2 nav-home" href="./Pages/Home page/home.html">Home</a></li>
+                    <li><a class="nav-links font-semibold nav-shop" href="">Shop Now</a></li>
+                </ul>   
+            </div>
+            <div class="searchbar flex flex-justify-center pd-1 flex-grow-1">
+                <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <input class="searchbar-input" type="text" placeholder="Type to search"/>
+            </div>
+            <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="./Pages/signup-login/signup.html">
+                        <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
+                    </a>
+                    <span class="text-xs">Profile</span>
+                </li>
+
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="./Pages/Wishlist/wishlist.html">
+                        <span class="badge-container">
+                            <i class="fas fa-heart fa text-2xl nav-links  nav-wishlist"></i>
+                            <span class="status-badge status-badge-number">2</span>
+                        </span>
+                    </a>
+                    <span class="text-xs">Wishlist</span> 
+                </li>
+
+                <li class="flex flex-column flex-justify-center flex-align-center">
+                    <a class="flex flex-column" href="./Pages/cart page/cart.html">
+                        <span class="badge-container">
+                            <i class="fa fa-shopping-cart text-2xl nav-links  nav-cart"></i>
+                            <span class="status-badge status-badge-number">1</span>
+                        </span>
+                    </a>    
+                    <span class="text-xs">Cart</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Main-->
+        <main class="main flex flex-column flex-grow-1">
+            <div class="grid-4-column">
+                <!--Filter-->
+                <div class="left-filter flex flex-column m-2">
+                    <div class="flex flex-gap-3 mb-1">
+                        <span class="text-xl font-semibold">Filters</span>
+                        <button class="btn-transparent filter-clear text-xl">Clear</button>
+                    </div>
+                    <ul class="flex flex-column list-style-none">
+                        <!--Rating-->
+                        <li class="text-lg font-semibold mt-1 mb-1">Rating</li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-1">
+                                    <span>0</span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                            </label>
+                            <input class="filter-slider" type="range" min="0" max="5" value="2">    
+                        </li>
+
+                        <!--Categories-->
+                        <li class="text-lg font-semibold mt-1 mb-1">Category</li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Shirt
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Shoes
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Sunglasses
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Cap
+                            </label>
+                        </li>
+
+                        <!--Brands-->
+                        <li class="text-lg font-semibold mt-1 mb-1">Brand</li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Nike
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Adidas
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="checkbox">
+                                Puma
+                            </label>
+                        </li>
+
+                        <!--Sort by-->
+                        <li class="text-lg font-semibold mt-1 mb-1">Sort by</li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="radio">
+                                Price - Low to High
+                            </label>
+                        </li>
+                        <li class="line-spacing">
+                            <label class="text-sm flex flex-align-center flex-gap-0-5">
+                                <input class="filter-checkbox-field" type="radio">
+                                Price - High to Low
+                            </label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!--Product display-->
+                <div class="product-display flex flex-grow-1 flex-gap-2 flex-wrap mt-2 mr-4 mb-2">
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <div class="card-badge">Best Seller</div>
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <div class="card-badge">Limited Offer</div>
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card product-card-outofstock flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <div class="card-badge">Out of Stock</div>
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn product-btn-outofstock text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn product-btn-outofstock text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card flex flex-column m-2 ">
+                        <div class="product-img-container">
+                            <img class="product-img" loading="lazy" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/11294000/2020/3/13/dcfecbb7-e327-4769-8e78-2ea57334c9b51584083952302-Roadster-Men-Tshirts-4591584083950174-1.jpg" alt="image"/>
+                        </div>
+                        <div class="flex flex-column flex-gap-0-5">
+                            <h3 class="dod-company">Nike</h3>
+                            <h2 class="dod-product">T-Shirt</h2>
+                            <div class="card-rating flex flex-align-center">
+                                <div class="card-rating-stars">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-review">
+                                    <p class="card-dod-reviews">257 reviews</p>
+                                </div>
+                            </div>
+                            <div class="card-price flex-gap-0-5">
+                                <p class="card-dod-discount-price">Rs. 3600/-</p>
+                                <p class="price-strike">Rs. 3999/-</p>
+                            </div>
+                            <div class="flex flex-column">
+                                <button class="product-cart-btn text-base"><span class="cart-icon">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true">
+                                    </i></span>Add to Cart</button>
+                                <button class="product-wishlist-btn text-base">
+                                    Add to Wishlist</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
+            <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
+            <ul class="flex list-style-none footer-social-icons">
+                <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="footer-copy">© 2022 Easy Mart</div>
+        </footer>
+    </div>
+    
+</body>
+</html>
