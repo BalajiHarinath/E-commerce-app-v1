@@ -124,10 +124,6 @@
     color: var(--fav-btn);
 }
 
-.product-card-text-container {
-    gap: 0.3rem;
-}
-
 .dod-company, .dod-product{
     font-size: 1rem;
     margin-bottom: 0;
