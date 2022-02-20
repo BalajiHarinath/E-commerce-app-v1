@@ -1,6 +1,6 @@
 <h1>Easy Mart</h1>
 <br>
-<b>Easy Mart</b> is an e-commerce app where you can shop various products such as shirt, shoes, sunglasses and caps from differenet brands.
+<b>Easy Mart</b> is an e-commerce app where you can shop various products such as shirt, shoes, sunglasses and caps from different brands.
 <br>
 As of now Easy Mart contains screens for the following pages:-
 
