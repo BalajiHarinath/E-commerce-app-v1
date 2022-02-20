@@ -31,7 +31,7 @@
                 <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                 <input class="searchbar-input" type="text" placeholder="Type to search"/>
             </div>
-            <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
+            <ul class="nav-icons flex flex-justify-space-around flex-gap-2 list-style-none">
                 <li class="flex flex-column flex-justify-center flex-align-center">
                     <a class="flex flex-column" href="./Pages/signup-login/signup.html">
                         <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
@@ -61,10 +61,14 @@
             </ul>
         </nav>
 
+        <div class="searchbar-small-screen">
+            <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input class="searchbar-input flex flex-grow-1" type="text" placeholder="Type to search"/>
+        </div>
+
         <!--Main-->
-        <main class="main flex flex-column flex-grow-1">
+        <main class="main flex flex-column">
             <div class="grid-4-column m-1">
-                <!-- <img class="home-image" loading="lazy" src="./assets/images/home/delaney-van-q5bmwVJarGU-unsplash.jpg"  alt="home-image"/> -->
                 <img class="home-image" loading="lazy" src="../../assets/images/home/delaney-van-q5bmwVJarGU-unsplash.jpg"  alt="home-image"/>
                 <div class="home-text flex flex-column flex-justify-center flex-align-center">
                     <p class="text-3xl font-bold pd-1">Bigger brands biggest discounts!!!</p>
@@ -165,9 +169,9 @@
                          </div>
                          <div class="card-btn-container-hz">
                            <button class="btn-icon-text"><span class="cart-icon">
-                             <i class="fa fa-shopping-cart" aria-hidden="true">
+                             <i class="fa fa-shopping-cart dod-cart-icon" aria-hidden="true">
                              </i></span>Add to Cart</button>
-                           <button class="btn-outline btn-medium">
+                           <button class="btn-outline btn-medium dod-wishlist-btn">
                              Add to Wishlist</button>
                          </div>
                         </div>
@@ -199,12 +203,12 @@
                              <p class="price-strike">Rs. 3999/-</p>
                          </div>
                          <div class="card-btn-container-hz">
-                           <button class="btn-icon-text"><span class="cart-icon">
-                             <i class="fa fa-shopping-cart" aria-hidden="true">
-                             </i></span>Add to Cart</button>
-                           <button class="btn-outline btn-medium">
-                             Add to Wishlist</button>
-                         </div>
+                            <button class="btn-icon-text"><span class="cart-icon">
+                              <i class="fa fa-shopping-cart dod-cart-icon" aria-hidden="true">
+                              </i></span>Add to Cart</button>
+                            <button class="btn-outline btn-medium dod-wishlist-btn">
+                              Add to Wishlist</button>
+                          </div>
                         </div>
                     </div>
 
@@ -234,30 +238,31 @@
                              <p class="price-strike">Rs. 3999/-</p>
                          </div>
                          <div class="card-btn-container-hz">
-                           <button class="btn-icon-text"><span class="cart-icon">
-                             <i class="fa fa-shopping-cart" aria-hidden="true">
-                             </i></span>Add to Cart</button>
-                           <button class="btn-outline btn-medium">
-                             Add to Wishlist</button>
-                         </div>
+                            <button class="btn-icon-text"><span class="cart-icon">
+                              <i class="fa fa-shopping-cart dod-cart-icon" aria-hidden="true">
+                              </i></span>Add to Cart</button>
+                            <button class="btn-outline btn-medium dod-wishlist-btn">
+                              Add to Wishlist</button>
+                          </div>
                         </div>
                     </div>
 
                 </div>
             </div>
         </main>
-
-        <!--Footer-->
-        <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
-            <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
-            <ul class="flex list-style-none footer-social-icons">
-                <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="footer-copy">© 2022 Easy Mart</div>
-        </footer>
     </div>
+
+    <!--Footer-->
+    <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
+        <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
+        <ul class="flex list-style-none footer-social-icons">
+            <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="footer-copy">© 2022 Easy Mart</div>
+    </footer>
+   
     
 </body>
 </html>

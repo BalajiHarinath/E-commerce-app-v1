@@ -31,7 +31,7 @@
                 <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                 <input class="searchbar-input" type="text" placeholder="Type to search"/>
             </div>
-            <ul class="flex flex-justify-space-around flex-gap-2 list-style-none">
+            <ul class="nav-icons flex flex-justify-space-around flex-gap-2 list-style-none">
                 <li class="flex flex-column flex-justify-center flex-align-center">
                     <a class="flex flex-column" href="../signup-login/signup.html">
                         <i class="fa fa-user text-2xl nav-links nav-profile" aria-hidden="true"></i>
@@ -61,15 +61,27 @@
             </ul>
         </nav>
 
+        <div class="searchbar-small-screen">
+            <button class="searchbar-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input class="searchbar-input flex flex-grow-1" type="text" placeholder="Type to search"/>
+        </div>
+
         <!--Main-->
-        <main class="main flex flex-column flex-grow-1">
+        <main class="main flex flex-column">
             <div class="grid-4-column">
                 <!--Filter-->
                 <div class="left-filter flex flex-column m-2">
-                    <div class="flex flex-gap-3 mb-1">
+
+                    <div class="left-filter-btn-container flex flex-gap-3 mb-1">
                         <span class="text-xl font-semibold">Filters</span>
                         <button class="btn-transparent filter-clear text-xl">Clear</button>
                     </div>
+
+                    <div class="left-filter-btn-container-small-screen pdb-2">
+                        <button class="left-filter-apply-btn-small-screen btn-transparent text-xl font-semibold">Apply</button>
+                        <button class="left-filter-clear-btn-small-screen filter-clear btn-transparent text-xl">Clear</button>
+                    </div>
+
                     <ul class="flex flex-column list-style-none">
                         <!--Rating-->
                         <li class="text-lg font-semibold mt-1 mb-1">Rating</li>
@@ -392,18 +404,25 @@
                 </div>
             </div>
         </main>
-
-        <!--Footer-->
-        <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
-            <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
-            <ul class="flex list-style-none footer-social-icons">
-                <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-            </ul>
-            <div class="footer-copy">© 2022 Easy Mart</div>
-        </footer>
     </div>
+
+    <div class="filter-navigation-small-screen">
+        <button class="filter-btn-small-screen btn-transparent text-xl font-semibold">Filters</button>
+        <button class="clear-btn-small-screen filter-clear btn-transparent text-xl ">Clear</button>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer flex flex-column flex-justify-center flex-align-center pdt-2 pdb-2">
+        <div class="footer-header text-base">Made with <span>&lt;/&gt;</span> by Balaji BH</div>
+        <ul class="flex list-style-none footer-social-icons">
+            <li><a href="https://github.com/BalajiHarinath"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/balaji_harinath"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/balaji-harinath-90a56518a"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
+        <div class="footer-copy">© 2022 Easy Mart</div>
+    </footer>
+   
+    <script src="../../app.js"></script>
     
 </body>
 </html>
