@@ -1,5 +1,5 @@
 .page-container {
-    height: 100vh;
+    min-height: calc(100vh - 7rem);
 }
 
 /*Navbar*/
@@ -7,7 +7,8 @@
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
     position: fixed;
-    width: 100vw;
+    top: 0;
+    width: 100%;
     z-index: 1;
 }
 
@@ -25,13 +26,13 @@
 
 .searchbar-btn{
     background-color: var(--white);
-    border: 0.5px solid black;
+    border: 1px solid var(--border-color1);
     border-right: none;
     padding: 0.625rem 1rem;
 }
 
 .searchbar-input {
-    border: 0.5px solid black;
+    border: 1px solid var(--border-color1);
     border-left: none;
     width: 35rem;
     padding: 0.625rem 1.25rem;
@@ -63,6 +64,10 @@
     border: none;
     right: -1rem;
     top: -0.7rem;
+}
+
+.searchbar-small-screen  {
+    display: none;
 }
 
 
@@ -113,6 +118,7 @@
     background-color: var(--secondary-color);
     box-shadow: var(--box-shadow);
     z-index: 1;
+    width: 100%;
 }
 
 .footer-social-icons {
@@ -144,29 +150,55 @@
 
 /*Media-Queries*/
 
-/* @media screen and (max-width : 1140px) {
-    :root{
-        font-size: 14px;
+@media screen and (max-width : 1160px) {
+
+    .navbar {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-icons {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .searchbar {
+        display: none;
+    }
+
+    .searchbar-small-screen {
+        display: flex;
+        z-index: 1;
+        position: fixed;
+        top: 4.4rem;
+        width: 100%;
+        border: none;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: calc(4.375rem + 3rem);
+    }
+
+    .footer {
+        z-index: 1;
+        min-width: 35.7rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 
 @media screen and (max-width : 1000px) {
     :root{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 640px) {
+    :root{
         font-size: 12px;
     }
 }
-
-@media screen and (max-width : 850px) {
-    :root{
-        font-size: 10px;
-    }
-}
-
-@media screen and (max-width : 720px) {
-    body {
-        height: 100vh;
-    }
-    :root{
-        font-size: 8px;
-    }
-} */
